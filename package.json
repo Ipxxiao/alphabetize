@@ -1,0 +1,20 @@
+{
+    "name": "alphabetize",
+    "version": "0.1.0",
+    "description": "to get chinese pinyin from chinese",
+    "main": "dist/alphabetize.min.js",
+    "scripts": {
+        "build": ""
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Ipxxiao/alphabetize.git"
+    },
+    "keywords": [
+        "alphabetize",
+        "pinyin"
+    ],
+    "author": "Jonas Hsiao",
+    "license": "MIT",
+    "homepage": "https://github.com/Ipxxiao/alphabetize"
+}
