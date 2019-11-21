@@ -1,5 +1,6 @@
 # alphabetize
 
+[![NPM version](https://img.shields.io/npm/v/alphabetize.svg?style=flat)](https://www.npmjs.com/package/alphabetize)
 [![Build Status](https://travis-ci.org/Ipxxiao/alphabetize.svg?branch=master)](https://travis-ci.org/Ipxxiao/alphabetize)
 [![codecov](https://codecov.io/gh/Ipxxiao/alphabetize/branch/master/graph/badge.svg)](https://codecov.io/gh/Ipxxiao/alphabetize)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
