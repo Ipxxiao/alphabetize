@@ -5,7 +5,7 @@
 [![codecov](https://codecov.io/gh/Ipxxiao/alphabetize/branch/master/graph/badge.svg)](https://codecov.io/gh/Ipxxiao/alphabetize)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-to get chinese pinyin from chinese. 
+to get chinese pinyin or alphabet from chinese. 提取拼音, 返回首字母大写形式；提取首字母，返回大写形式
 
 ## Browsers support
 
