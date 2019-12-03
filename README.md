@@ -28,27 +28,30 @@ npm run build
 ## use
 
 ``` javascript
-import { getFullChars, getCamelChars } from 'chinese-alphabetize'
-import Aalphabetize from 'chinese-alphabetize'
+import Alphabetize, { getFullChars, getCamelChars } from 'chinese-alphabetize'
 ```
 
 
 . **getFullChars**
 ``` javascript
-Aalphabetize.getFullChars('张三')
+<
+Alphabetize.getFullChars('张三')
 ```
 
 ``` javascript
+->
 ZhangSan
 ```
 
 . **getCamelChars**
 ``` javascript
-Aalphabetize.getCamelChars('张三铅')
-Aalphabetize.getCamelChars('张三铅', { checkPolyphone: true })
+<
+Alphabetize.getCamelChars('张三铅')
+Alphabetize.getCamelChars('张三铅', { checkPolyphone: true })
 ```
 
 ``` javascript
+->
 ZSQ
 ['ZSQ', 'ZSY']
 ```
