@@ -1,6 +1,6 @@
 {
     "name": "chinese-alphabetize",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "to get chinese pinyin from chinese",
     "main": "./libs/cjs",
     "repository": {
