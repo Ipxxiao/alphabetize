@@ -1,7 +1,7 @@
 {
     "name": "chinese-alphabetize",
-    "version": "0.1.8",
-    "description": "to get chinese pinyin from chinese",
+    "version": "1.0.0",
+    "description": "To get chinese pinyin or alphabet from chinese. 提取拼音, 返回首字母大写形式；提取首字母，返回大写形式",
     "main": "./libs/cjs",
     "repository": {
         "type": "git",
@@ -9,10 +9,14 @@
     },
     "keywords": [
         "alphabetize",
-        "chinese alphabetize",
+        "chinese",
         "pinyin",
-        "汉字转拼音",
-        "汉字转字母"
+        "letter",
+        "alphabet",
+        "中文",
+        "汉字",
+        "拼音",
+        "字母"
     ],
     "author": "Jonas Hsiao",
     "license": "MIT",
@@ -70,10 +74,9 @@
         "@babel/preset-env": "^7.6.3",
         "@babel/preset-typescript": "^7.6.0",
         "@types/jest": "^24.0.23",
-        "@types/jsdom": "^12.2.4",
         "@types/node": "^12.7.12",
         "chalk": "^2.4.2",
-        "codecov": "^3.6.1",
+        "codecov": "^3.6.5",
         "done-rainbow": "^0.1.2",
         "fs-extra": "^8.1.0",
         "glob": "^7.1.4",
@@ -91,13 +94,9 @@
         "rollup-plugin-uglify": "^6.0.4",
         "ts-jest": "^24.1.0",
         "tslib": "^1.10.0",
-        "typescript": "^3.6.4",
-        "jsdom": "^15.2.0"
+        "typescript": "^3.6.4"
     },
     "jest": {
-        "setupFiles": [
-            "<rootDir>/__mocks__/index.ts"
-        ],
         "transform": {
             ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
         },

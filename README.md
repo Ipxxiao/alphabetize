@@ -1,11 +1,12 @@
-# alphabetize
+# Alphabetize
 
 [![NPM version](https://img.shields.io/npm/v/alphabetize.svg?style=flat)](https://www.npmjs.com/package/alphabetize)
 [![Build Status](https://travis-ci.org/Ipxxiao/alphabetize.svg?branch=master)](https://travis-ci.org/Ipxxiao/alphabetize)
 [![codecov](https://codecov.io/gh/Ipxxiao/alphabetize/branch/master/graph/badge.svg)](https://codecov.io/gh/Ipxxiao/alphabetize)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![Coverage Status](https://coveralls.io/repos/github/Ipxxiao/alphabetize/badge.svg?branch=master)](https://coveralls.io/github/Ipxxiao/alphabetize?branch=master)
 
-to get chinese pinyin or alphabet from chinese. 提取拼音, 返回首字母大写形式；提取首字母，返回大写形式
+To get chinese pinyin or alphabet from chinese. 提取拼音, 返回首字母大写形式；提取首字母，返回大写形式
 
 ## Browsers support
 
@@ -19,41 +20,39 @@ to get chinese pinyin or alphabet from chinese. 提取拼音, 返回首字母大
 npm i chinese-alphabetize -S
 ```
 
-## build with rollup
-
-``` base
-npm run build
-```
-
-## use
+## Usage
 
 ``` javascript
 import Alphabetize, { getFullChars, getCamelChars } from 'chinese-alphabetize'
+or
+const Alphabetize, { getFullChars, getCamelChars } = require('chinese-alphabetize')
 ```
 
 
-. **getFullChars**
+. **getFullChars（提取拼音, 返回首字母大写形式）**
 ``` javascript
 <
 Alphabetize.getFullChars('张三')
-```
 
-``` javascript
 ->
 ZhangSan
 ```
 
-. **getCamelChars**
+. **getCamelChars（提取首字母，返回大写形式）**
 ``` javascript
 <
 Alphabetize.getCamelChars('张三铅')
 Alphabetize.getCamelChars('张三铅', { checkPolyphone: true })
-```
 
-``` javascript
 ->
 ZSQ
 ['ZSQ', 'ZSY']
+```
+
+## Build with rollup
+
+``` base
+npm run build
 ```
 
 ## More

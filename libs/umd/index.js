@@ -36,7 +36,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
      * @returns {string}
      */
     var getFullChars = function (str) {
-        var result = '', name;
+        var result = '';
         for (var i = 0, len = str.length; i < len; i++) {
             var ch = str.substr(i, 1), unicode = ch.charCodeAt(0);
             if (unicode > 40869 || unicode < 19968) {

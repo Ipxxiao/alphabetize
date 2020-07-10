@@ -29,12 +29,11 @@ let opts: Options = {
  * @returns {string}
  */
 const getFullChars = (str: string): string => {
-    let result = '',
-        name;
+    let result: string = '';
 
-    for (let i = 0, len = str.length; i < len; i++) {
-        let ch = str.substr(i, 1),
-            unicode = ch.charCodeAt(0);
+    for (let i: number = 0, len: number = str.length; i < len; i++) {
+        let ch: string = str.substr(i, 1),
+            unicode: number = ch.charCodeAt(0);
         if (unicode > 40869 || unicode < 19968) {
             result += ch;
         } else {
@@ -62,13 +61,13 @@ const getFullChars = (str: string): string => {
 const getCamelChars = (str: string, options?: Options): string | string[] => {
     /* istanbul ignore next */
     if (typeof str === 'string') {
-        let chars = []; // 保存中间结果的数组
+        let chars: string[] = []; // 保存中间结果的数组
 
         options = Object.assign({}, opts, options);
 
-        for (let i = 0, len = str.length; i < len; i++) {
+        for (let i: number = 0, len: number = str.length; i < len; i++) {
             // 获得unicode码
-            let ch = str.charAt(i);
+            let ch: string = str.charAt(i);
             // 检查该unicode码是否在处理范围之内,在则返回该码对映汉字的拼音首字母,不在则调用其它函数处理
             chars.push(_getChar(ch, options));
         }
@@ -100,8 +99,8 @@ const _getFullChar = (str: string): string | undefined => {
  * @returns {string}
  */
 const _capitalize = (str: string): string => {
-    let first = str.substr(0, 1).toUpperCase();
-    let spare = str.substr(1, str.length);
+    let first: string = str.substr(0, 1).toUpperCase();
+    let spare: string = str.substr(1, str.length);
     return first + spare;
 }
 
@@ -113,7 +112,7 @@ const _capitalize = (str: string): string => {
  * @returns {string}
  */
 const _getChar = (ch: string, options: Options): string => {
-    let unicode = ch.charCodeAt(0);
+    let unicode: number = ch.charCodeAt(0);
     // 如果不在汉字处理范围之内,返回原字符,也可以调用自己的处理函数
     if (unicode > 40869 || unicode < 19968)
         return ch;
@@ -133,23 +132,23 @@ const _getChar = (ch: string, options: Options): string => {
 const _getResult = (chars: string[], options: Options): string | string[] => {
     if (!options.checkPolyphone)
         return chars.join('');
-    let result = [''],
-        j;
-    for (let i = 0, len = chars.length; i < len; i++) {
-        let str = chars[i],
-            strlen = str.length;
+    let result: string[] = [''],
+        j: number;
+    for (let i: number = 0, len: number = chars.length; i < len; i++) {
+        let str: string = chars[i],
+            strlen: number = str.length;
         if (strlen == 1) {
             for (j = 0; j < result.length; j++) {
                 result[j] += str;
             }
         } else {
-            let swap1 = result.slice(0);
+            let swap1: string[] = result.slice(0);
             result = [];
             for (j = 0; j < strlen; j++) {
                 // 复制一个相同的arrResult
-                let swap2 = swap1.slice(0);
+                let swap2: string[] = swap1.slice(0);
                 // 把当前字符str[k]添加到每个元素末尾
-                for (let k = 0; k < swap2.length; k++) {
+                for (let k: number = 0; k < swap2.length; k++) {
                     swap2[k] += str.charAt(j);
                 }
                 // 把复制并修改后的数组连接到arrResult上

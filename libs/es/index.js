@@ -22,7 +22,7 @@ let opts = {
  * @returns {string}
  */
 const getFullChars = (str) => {
-    let result = '', name;
+    let result = '';
     for (let i = 0, len = str.length; i < len; i++) {
         let ch = str.substr(i, 1), unicode = ch.charCodeAt(0);
         if (unicode > 40869 || unicode < 19968) {
