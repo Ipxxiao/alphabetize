@@ -29,7 +29,7 @@ const Alphabetize, { getFullChars, getCamelChars } = require('chinese-alphabetiz
 ```
 
 
-. **getFullChars（提取拼音, 返回首字母大写形式）**
+. **getFullChars（提取拼音，返回首字母大写形式）**
 ``` javascript
 <
 Alphabetize.getFullChars('张三')
