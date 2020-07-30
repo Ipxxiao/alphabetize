@@ -17,6 +17,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 })(function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
+    exports.getCamelChars = exports.getFullChars = void 0;
     var charDict_1 = __importDefault(require("./charDict"));
     var fullDict_1 = __importDefault(require("./fullDict"));
     var polyphone_1 = __importDefault(require("./polyphone"));
@@ -24,7 +25,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
         checkPolyphone: false,
     };
     /**
-     * 提取拼音, 返回首字母大写形式
+     * 提取拼音，返回首字母大写形式
      *
      * @example
      * ```js

@@ -8,7 +8,7 @@ interface Options {
     checkPolyphone: boolean;
 }
 /**
- * 提取拼音, 返回首字母大写形式
+ * 提取拼音，返回首字母大写形式
  *
  * @example
  * ```js

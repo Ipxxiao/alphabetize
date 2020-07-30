@@ -1,4 +1,4 @@
-# Alphabetize
+# Description
 
 [![NPM version](https://img.shields.io/npm/v/chinese-alphabetize.svg?style=flat)](https://www.npmjs.com/package/chinese-alphabetize)
 [![Build Status](https://travis-ci.org/Ipxxiao/alphabetize.svg?branch=master)](https://travis-ci.org/Ipxxiao/alphabetize)
@@ -18,6 +18,8 @@ To get chinese pinyin or alphabet from chinese. 从汉字提取拼音, 返回首
 
 ``` base
 npm i chinese-alphabetize -S
+or
+yarn add chinese-alphabetize
 ```
 
 ## Usage

@@ -48,7 +48,7 @@ getCamelChars('张三铅', { checkPolyphone: true })
 <a name="module_alphabetize..getFullChars"></a>
 
 ### alphabetize~getFullChars(str) ⇒ <code>string</code>
-<p>提取拼音, 返回首字母大写形式</p>
+<p>提取拼音，返回首字母大写形式</p>
 
 **Kind**: inner method of [<code>alphabetize</code>](#module_alphabetize)  
 

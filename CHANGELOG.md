@@ -32,6 +32,10 @@ Changelog entries are classified using the following labels _(from [keep-a-chang
 
 </details>
 
+## 1.0.3 (2020-07-30)
+
+- Remove Rollup of dependencies
+
 ## 1.0.2 (2020-07-23)
 
 - Security bump lodash from 4.17.15 to 4.17.19. See ([pull/2](https://github.com/Ipxxiao/alphabetize/pull/2))
