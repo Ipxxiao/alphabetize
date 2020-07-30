@@ -1,6 +1,6 @@
 {
     "name": "chinese-alphabetize",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "To get chinese pinyin or alphabet from chinese. 从汉字提取拼音, 返回首字母大写形式；提取首字母，返回大写形式",
     "main": "./libs/cjs",
     "repository": {
