@@ -6,7 +6,7 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Coverage Status](https://coveralls.io/repos/github/Ipxxiao/alphabetize/badge.svg?branch=master)](https://coveralls.io/github/Ipxxiao/alphabetize?branch=master)
 
-To get chinese pinyin or alphabet from chinese. 提取拼音, 返回首字母大写形式；提取首字母，返回大写形式
+To get chinese pinyin or alphabet from chinese. 从汉字提取拼音, 返回首字母大写形式；提取首字母，返回大写形式
 
 ## Browsers support
 
