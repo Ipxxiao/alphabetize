@@ -49,12 +49,8 @@ ZSQ
 ['ZSQ', 'ZSY']
 ```
 
-## Build with rollup
-
-``` base
-npm run build
-```
-
 ## More
+- [Changelog](https://github.com/Ipxxiao/alphabetize/blob/master/CHANGELOG.md)
+- [License](https://github.com/Ipxxiao/alphabetize/blob/master/LICENSE)
 - [Docs](https://github.com/Ipxxiao/alphabetize/tree/master/docs)
 - [Test](https://github.com/Ipxxiao/alphabetize/blob/master/__tests__/index.spec.ts)
