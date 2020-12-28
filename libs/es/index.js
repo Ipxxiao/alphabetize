@@ -57,10 +57,10 @@ const getCamelChars = (str, options) => {
         for (let i = 0, len = str.length; i < len; i++) {
             // 获得unicode码
             let ch = str.charAt(i);
-            // 检查该unicode码是否在处理范围之内,在则返回该码对映汉字的拼音首字母,不在则调用其它函数处理
+            // 检查该unicode码是否在处理范围之内，在则返回该码对映汉字的拼音首字母，不在则调用其它函数处理
             chars.push(_getChar(ch, options));
         }
-        // 处理arrResult,返回所有可能的拼音首字母串数组
+        // 处理arrResult，返回所有可能的拼音首字母串数组
         return _getResult(chars, options);
     }
     else {
@@ -100,10 +100,10 @@ const _capitalize = (str) => {
  */
 const _getChar = (ch, options) => {
     let unicode = ch.charCodeAt(0);
-    // 如果不在汉字处理范围之内,返回原字符,也可以调用自己的处理函数
+    // 如果不在汉字处理范围之内，返回原字符，也可以调用自己的处理函数
     if (unicode > 40869 || unicode < 19968)
         return ch;
-    // 检查是否是多音字,是按多音字处理,不是就直接在strChineseFirstPY字符串中找对应的首字母
+    // 检查是否是多音字，是按多音字处理，不是就直接在strChineseFirstPY字符串中找对应的首字母
     if (!options.checkPolyphone)
         return CharDict.charAt(unicode - 19968);
     return Polyphone[unicode] ? Polyphone[unicode] : CharDict.charAt(unicode - 19968);

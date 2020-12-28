@@ -32,6 +32,9 @@ Changelog entries are classified using the following labels _(from [keep-a-chang
 
 </details>
 
+## 1.0.4 (2020-12-28)
+- Security update jest version
+
 ## 1.0.3 (2020-07-30)
 
 - Remove Rollup of dependencies
@@ -48,7 +51,7 @@ Changelog entries are classified using the following labels _(from [keep-a-chang
 
 ## 0.1.1 - 2019-11-21
 
-First release.
+- First release.
 
 
 [keep-a-changelog]: https://github.com/olivierlacan/keep-a-changelog
