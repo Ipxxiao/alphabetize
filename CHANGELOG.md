@@ -32,7 +32,12 @@ Changelog entries are classified using the following labels _(from [keep-a-chang
 
 </details>
 
+## 1.0.5 (2022-02-23)
+
+-   Security update of dependabot alerts
+
 ## 1.0.4 (2020-12-28)
+
 - Security update jest version
 
 ## 1.0.3 (2020-07-30)
